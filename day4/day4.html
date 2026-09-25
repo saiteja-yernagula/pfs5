@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    elements are divvided based on behaviour
+    1) block level elements
+    are the elements which always starts on new line and takes complete space
+    div,h1,p,ul,table,li,
+    2) inline elements
+    are the elements which doesnt starts on new line and which takes necessary space
+    span,a,img
+
+    div 
+    div is block level container that is used to group the tags for applying styles
+
+    span
+    span is a inline element that is used to group the text for applying styles
+
+    -->
+    <div style="background:#f08080;color:white">
+   <h1><span style="background:black">Front</span><span style="background:blue">End</span></h1>
+   <p>it deals with ui and ux</p>
+   </div>
+
+   <div  style="background:lightskyblue;color:white">
+       <h1><span style="font-size:4rem">B</span>ackend</h1>
+       <p>it deals with api building and logics</p>
+    </div>
+
+    <div  style="background:lightgreen;color:white">
+        <h1>database</h1>
+        <p>to store the data</p>
+    </div>
+
+<!-- 
+
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div>
+    <div>content</div> -->
+<!-- sematic tags are the tags which conveys meaning to the browser and developer -->
+    <!-- <header>content</header>
+    <nav>content</nav>
+    <section>content</section>
+    <article>content</article>
+    <aside>content</aside>
+    <footer>content</footer> -->
+
+
+    <!-- 
+    forms are used to collect data from the user and allowing user to submit
+    data to the server
+    login,sing up,register,contact
+    forms are defined with form tag
+
+    form fields are defined with input tag
+    label is used to provide hint about an input tag
+
+    attributes
+    type attributes is used to control the input tag
+    placeholder- it also provides hint
+    name - it is used carry the data in key value pairs
+    required- it specifies that a field must be filled
+    for and id -it connect input to the label
+
+   method-it defines how data should be transferred
+   get and post
+
+   action
+   it specifies where the data should be submmited
+
+   formsubmit co
+    -->
+    <form action="" method="POST">
+        <label for="un">Enter username:</label>
+        <input id="un" type="text" name="username"  placeholder="username"> <br>
+        <label for="pd" for="">Enter password:</label>
+        <input id="pd" type="password" name="password" placeholder="password"> <br>
+
+        <label for="">enter mail</label>
+        <input type="email"><br>
+        
+        book your appointment
+        <input type="date"> <br>
+        book your slot
+        <input type="datetime-local"><br>
+        generate monthly reports
+        <input type="month"> <br>
+        generate weekly reports
+        <input type="week"> <br>
+        enter mobile number
+        <input type="text" maxlength="10"> <br>
+        enter quantity 
+        <input type="number" min="2" max="4"> <br>
+        upload your resume
+        <input type="file"> <br>
+        search for your product
+        <input type="search">  <br>
+        rate yourself
+        <input type="range"> <br>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+    </form>
+
+
+    <form action="">
+        select your stack  <br>
+        <input type="radio" id="py" name="stack" value="pythonstack">
+        <label for="py">python stack</label>
+        <input type="radio" id="java" name="stack" value="javastack">
+        <label for="java">java stack</label>
+        <input type="radio"  id="mrn" name="stack" value="mernstack">
+        <label for="mrn">mern stack</label>
+<br>
+        select your skills
+        <input id="html" type="checkbox" name="skill" value="html">
+        <label for="html">html</label> 
+        <input id="css" type="checkbox" name="skill" value="css">
+        <label for="css">css</label>  <br>
+
+        <label for="">Choose branch</label>
+        <select name="branch" id="">
+            <option value="hyd">Hyd</option>
+            <option value="vizag">vizag</option>
+            <option value="vijayawada">vijayawada</option>
+        </select>
+
+        <br>
+        <label for="">Enter feedback</label>
+        <textarea name="" rows="10" cols="10" id=""></textarea>
+
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>

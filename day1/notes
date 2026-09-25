@@ -1,0 +1,73 @@
+Fullstack webdevelopment 
+using frontend-backend- database
+
+webdevelopment - 
+website - it collection of webpages which   
+are connected together
+webpage- it is a document that read by the browsseer and displays content
+
+
+frontend -  visual aspects ,ui and ux , responsiveness
+backend -python- any framework-flask,django,fastapi  validations,connectivity b-database,
+          api building, crud, authentification,
+          authorization,
+
+
+frontend technologies
+static webpage- content is fixed
+1) html - structure--git 
+2) css - stylings --- bootstrap 
+dynamic webpage- where user can interact 
+3) javascript
+4) react- framework
+
+
+
+HTML - Hypertext markup language
+hypertext - a text referred to another text 
+markup - a set of rules that defines how content
+should be displayed on the browser
+
+
+it is a standard markup language that is used to 
+create structure for a webpages
+it contains series of elements that are represented by tags
+
+tag
+<resword>  open tag
+</resword>  closing tag
+
+element
+open tag + content + closing tag
+<resword>some content </resword>
+
+heading tags
+<h1>Heading</h1>  - 32px
+<h2>content</h2>
+<h6>smallest heading</h6>
+
+
+
+extensions
+1) live server
+2) live preview 
+3) prettier
+4) es 7+ react
+
+
+
+Basic structure of html
+declaration-it tells the type and version(5) of document
+<!DOCTYPE html>
+html is a root element of the document
+<html>
+    it contains title,metadata and third party links
+    <head>
+        <title>first wepage</title>
+    </head>
+    it contains all webpage content
+    <body>
+      <h1>my first web page</h1>
+    </body>
+</html>
+

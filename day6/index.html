@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        header,footer{
+            text-align:center;
+            background:rgb(1, 1, 74);
+            padding:25px;
+        }
+        header>a{
+            color:white;
+            background:blue;
+            padding:8px;
+            border-radius:10px;
+            margin:8px;
+            display:inline-block;
+            transition:all 1s;
+        }
+        header>a:hover{
+            background:red;
+            transform:translate(0px,-5px)
+        }
+
+        .s1{
+            height:400px;
+            text-align:center;
+            padding:200px 20px ;
+            background:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
+            url('https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg');
+            color:white;
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+        }
+
+        .s2{
+            text-align: center;
+            height:500px;
+            padding:130px 30px;
+            background:whitesmoke;
+        }
+        .s2>div{
+            font-size:2rem;
+            display:inline-block;
+            margin:10px;
+            color:white;
+            width:140px;
+            height:130px;
+            border-radius: 15px;
+            padding:40px 30px;
+            box-shadow:0px 0px 5px 0px black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Contact</a>
+    </header>
+
+
+    <section class="s1">
+        <h1>Learn CSS Through Projects</h1>
+        <p>This project demonstrates CSS Colors, Backgrounds, Flexbox, Box Model, Typography, Shadows, and Responsive Design in one modern webpage.</p>
+    </section>
+
+    <section class="s2">
+        <h1>css colors</h1>
+        <div style="background:red">red</div>
+        <div style="background:blue">blue</div>
+        <div style="background:green">green</div>
+        <div style="background:violet">violet</div>
+    </section>
+</body>
+</html>

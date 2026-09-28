@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+
+        combinators
+        .cards>div--child selector
+        .cards div---descendent selector
+
+        hover
+
+         */
+
+.cards>div{
+    background:lightsalmon;
+    border:1px solid black;
+    width:300px;
+    height:300px;   
+    display:inline-block;
+    transition:all 1s;
+    box-shadow: 1px 1px 3px 1px black;
+    margin:20px;
+}
+.cards>div:hover{
+    background:lightseagreen;
+    color:white;
+    border-radius:20px;
+    transform:translate(10px,-20px);
+    transform:rotate(20deg);
+    transform:scale(1.2);
+    transform:scale(0.6);
+    
+}
+
+h1{
+    text-align:right;
+    text-align:center;
+    text-shadow:1px 1px 1px red;
+}
+p{
+   letter-spacing:10px; 
+   word-spacing:10px;
+   line-height: 2;
+   font-size:2rem;
+   font-family:cursive;
+   font-weight:900;
+}
+    </style>
+</head>
+<body>
+    <h1>Day2 -css- text,font,hover,transform</h1>
+    <p>text properties- align,shadow ,spacing</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt cum magni culpa iure nobis dicta sequi sapiente voluptas quo in minima, consectetur rem doloribus mollitia ullam dolore molestias veniam?</p>
+    <div class="cards">
+        <div>
+            card1
+        </div>
+        <div>
+            card2
+        </div>
+        <div>
+            card3
+        </div>
+    </div>
+    
+</body>
+</html>

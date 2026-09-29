@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <style>
+        /* 
+        units
+        absolute units
+        px
+        inch
+        cm
+        mm
+
+        relative units
+        %-it always depends on the parent
+        width,padding,margin.
+        vw vh-it alway depends on the viewport
+        width - 100vw;
+        height- 100vh;
+        rem-
+        root element fontisizze
+        16px 
+        positions
+        
+        html{
+            font-size:8px;
+        }
+        div{
+            background:lightgreen;
+            width:75vw;
+            height:200vh;
+            font-size:3rem;
+        }
+        p{
+            background:red;
+            width:50%;
+            width:75vw;
+        
+        }
+        */
+
+    </style> -->
+    <style>
+     header{
+        background:lightseagreen;
+        color:white;
+        padding:3%;
+        text-align:center;
+        position:sticky;
+        top:0;
+     }
+     header>a{
+        color:white;
+        border:2px solid white;
+        padding:10px;
+        margin:10px;
+        border-radius:10px;
+     }
+
+     section{
+        padding:3%;
+     }
+     .card{
+        width:25%;
+        display:inline-block;
+        padding:3%;
+        border: 2px solid lightseagreen;
+        border-radius:10px;
+     }
+     .card img{
+        width:200px;
+        height:200px;
+     }
+     /* 
+     
+     
+     positions
+     static -by default
+     sticky- it will fixed the element when the condition is met
+          position:sticky;
+          top:30px;
+     
+     */
+     i{
+        font-size:3rem;
+        color:lightseagreen
+     }
+     .icons{
+        position:fixed;
+        top:200px;
+        right:10px;
+     }
+ 
+
+     #el{
+        position:relative;
+        z-index:-10;
+     }
+     .card i{
+     position:absolute;
+       left:0;
+       top:200px;
+     }
+
+     header{
+        animation-name:backgroundchange;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+     }
+
+     @keyframes backgroundchange{
+        from{
+            background:darkblue;
+        }
+        to{
+            background:orange;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="icons">
+        <i class="fa-brands fa-whatsapp"></i> <br>
+        <i class="fa-brands fa-linkedin"></i> <br>
+        <i class="fa-brands fa-instagram"></i> <br>
+    </div>
+    <header>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">services</a>
+    </header>
+
+    <section>
+        <div class="card" id="el">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtoOyvfTJtuMCJDSOTdBKSqM2am8gH9dednH14pWUaQ&s=10" alt=""></div>
+            <h1>Javascript</h1>
+            <button>view details</button>
+               <i class="fa-brands fa-whatsapp"></i> <br>
+        </div>
+        <div class="card">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQESTOE5VSRkt89qNAkoJU1B7ukZl5hjrZAt_MzydZ__w&s" alt=""></div>
+            <h1>React</h1>
+            <button>view details</button>
+        </div>
+        <div class="card">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnOvkDLfyhGuGYxT97TRIE0Pt1-FlX_vFNuz41whSTQ&s=10" alt=""></div>
+            <h1>Fastapi</h1>
+            <button>view details</button>
+        </div>
+    </section>
+    <img id="demo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtoOyvfTJtuMCJDSOTdBKSqM2am8gH9dednH14pWUaQ&s=10" alt="">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnOvkDLfyhGuGYxT97TRIE0Pt1-FlX_vFNuz41whSTQ&s=10" alt=""></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnOvkDLfyhGuGYxT97TRIE0Pt1-FlX_vFNuz41whSTQ&s=10" alt=""></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnOvkDLfyhGuGYxT97TRIE0Pt1-FlX_vFNuz41whSTQ&s=10" alt=""></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSnOvkDLfyhGuGYxT97TRIE0Pt1-FlX_vFNuz41whSTQ&s=10" alt=""></div>
+
+</body>
+</html>
+    

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        flexbox
+        it is a one dimensional layout model that is used to create a layout
+        based on parent we can control the child
+
+        flex-container(parent properties)
+        1) 
+        display:flex;
+        it will create the flex container and align the child items direction into row
+        
+        2) flex-direction
+        it is used to change the direction of child items
+        flex-direction:row;      --by default
+        flex-direction:row-reverse; 
+        flex-direction:column;
+        flex-direction:column-reverse;     
+
+        3) justify-content
+        it is used to control the alignments of child items on main axis
+  justify-content:center;
+             justify-content:end;
+             justify-content:start;
+             justify-content:space-between;
+             justify-content:space-evenly;
+             justify-content:space-around;
+
+        4) align-items
+        it is used to control the alignment of child items on cross axis
+          align-items:stretch;
+             align-items:center;
+             align-items:end;
+             align-items:start;
+             
+             5) flex-wrap
+             it will wrap the items to the next row
+        flex-wrap:wrap;
+        flex-wrap:wrap-reverse;
+
+        6) gap
+        it is used to create space between rows and cols
+        gap:20px;
+
+        7) align-content
+        it is used control the alignment on cross when there is a more than one row
+        align-content:center;
+        align-content:stretch;
+        align-content:end;
+        align-content:start;
+        align-content:space-around;
+        align-content:space-evenly;
+        align-content:space-between;
+        
+        8)
+        flex-flow
+        it is a short hand for direction and wrap
+        flex-flow:column-reverse wrap;
+        flex-flow:row-reverse wrap-reverse;
+        
+        flex-items(child properties)
+        1) flex-basis
+        it specifies the initital length of an item
+        flex-basis:20%;
+        */
+        .container{
+            border:2px solid blue;
+            height:80vh;
+             display:flex;
+             flex-direction:row-reverse;
+             flex-direction:column;
+             flex-direction:column-reverse;
+             flex-direction:row;
+             justify-content:center;
+             justify-content:end;
+             justify-content:start;
+             justify-content:space-between;
+             justify-content:space-evenly;
+             justify-content:space-around;
+             align-items:center;
+             align-items:end;
+             align-items:start;
+             align-items:stretch;
+             flex-wrap:wrap-reverse;
+             flex-wrap:wrap;
+             gap:20px;
+             align-content:center;
+             align-content:stretch;
+             align-content:end;
+             align-content:start;
+             align-content:space-around;
+             align-content:space-evenly;
+             align-content:space-between;
+             
+        }
+        .child{
+            background:lightgreen;
+            flex-basis:20%;
+            padding:20px;
+            
+        }
+        #demo{
+            order:-1
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child">child1</div>
+        <div class="child">child2</div>
+        <div class="child">child3</div>
+        <div class="child">child4</div>
+        <div class="child">child5</div>
+        <div class="child">child6</div>
+        <div class="child" id="demo">child7</div>
+        <div class="child">child8</div>
+        <div class="child">child9</div>
+        <div class="child">child10</div>
+    </div>
+    
+</body>
+</html>

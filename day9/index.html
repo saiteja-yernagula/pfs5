@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:black;
+            color:white;
+            padding:3%;
+            position:sticky;
+            top:0;
+        }
+        header a{
+            color:white;
+            margin:10px;
+            text-decoration: none;
+        }
+        header span{
+            color:green;
+            padding:8px;
+            border: 3px solid rgb(8, 208, 24)   ;
+        }
+        header a:hover{
+            transition: all 1s;
+            color:green;
+            /* text-decoration:3px solid underline green; */
+            border-bottom:3px solid green;
+        }
+
+        .s1{
+            display:flex;
+            align-items:center;
+            background:black;
+            color:white;
+            font-size:1.2rem;
+            line-height: 1.5;
+        }
+        .s1>div{
+            padding:2%;
+            flex-basis:50%;
+        }
+        .s1 img{
+            width:100%;
+        }
+        .btn1,.btn2{
+            background:green;
+            color:black;
+            padding:10px;
+            border:none;
+        }
+        .btn2{
+            color:white;
+            border:2px solid green;
+            background:transparent;
+        }
+
+        body{
+            background:black;
+            color:white;
+        }
+        .s2{
+            height:90vh;
+            background:rgba(58, 56, 56, 0.572);
+            margin:20px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .s2 h1{
+            background:green;
+            padding:20px;
+        }
+        html,body{
+            scroll-behavior: smooth;
+        }
+
+        .s3{
+            text-align:center;
+            padding:2%;
+        }
+        .container{
+            display:flex;
+            gap:20px;
+            padding:3%;
+        }
+        .card{
+            height:300px;
+            background:rgba(58, 56, 56, 0.572);
+            padding:3%;
+            line-height: 1.4; 
+            border: 2px solid black;
+        }
+        .card i{
+            font-size:3rem;
+            color:green;
+        }
+
+        .card:hover{
+            transform: translate(0px,-10px);
+            border:3px solid green;
+            transition: all 0.8s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>JD</span> John Doe</h1>
+        <div>
+            <a href="#about">About</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+    <section class="s1" id="about">
+        <div>
+            <h1>Hi, I'm <span style="color:green">John Doe</span></h1>
+            <h1>I build simple and clean websites.</h1>
+            <p>I am a web development student who loves turning ideas into real, working web pages.</p>
+            <button class="btn1">View Projects</button>
+            <button class="btn2">Download CV</button>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+        </div>
+    </section>
+
+    <section class="s2">
+       <h1>Fullstack Dev</h1>
+    </section>
+
+    <section class="s3" id="achievements">
+        <h1>What I Do</h1>
+        <div class="container">
+            <div class="card">
+                <i class="fa-solid fa-desktop"></i>
+                <h2>Web Design</h2>
+                <p>Design clean and attractive websites that provide great user experience</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Development</h2>
+                <p>Build responsive and functional websites using modern technologies.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>SEO & Analytics</h2>
+                <p>Improve website visibility and track performance with smart strategies.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-rocket"></i>
+                <h2>Performance</h2>
+                <p>Optimize website for speed and ensure smooth performance.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

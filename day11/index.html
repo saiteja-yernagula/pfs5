@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            padding:3%;
+            display:grid;
+            font-size:2rem;
+            grid-template-columns:1fr 1fr 1fr ;
+        }
+        #mail{
+            text-align:right;
+        }
+        #food{
+            text-align:center;
+        }
+
+        section{
+            padding:2%;
+            display:grid;
+            gap:20px;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+        }
+    
+        section img{
+            width:100%;
+        }
+
+        footer{
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+
+        }
+        footer>div{
+            padding:2%;
+        }
+
+        @media screen and (width<1000px){
+            section{
+                grid-template-columns:1fr 1fr 1fr;
+            }
+           }
+
+            @media screen and (width<750px){
+            section{
+                grid-template-columns:1fr 1fr ;
+            }
+            }
+
+            @media screen and (width<592px){
+            section{
+                grid-template-columns:1fr ;
+            }
+            footer{
+                grid-template-columns:1fr ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>icon</div>
+        <div id="food">my food</div>
+        <div id="mail">mail</div>
+    </header>
+
+    <section>
+        <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" alt=""></div>
+            <h1>The Perfect Sandwich, A Real NYC Classic</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/steak.jpg" alt=""></div>
+            <h1>Let Me Tell You About This Steak</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/cherries.jpg" alt=""></div>
+            <h1>Cherries, Interrupted</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/wine.jpg" alt=""></div>
+            <h1>Once Again, Robust Wine and Vegetable Pasta</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/sandwich.jpg" alt=""></div>
+            <h1>The Perfect Sandwich, A Real NYC Classic</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/steak.jpg" alt=""></div>
+            <h1>Let Me Tell You About This Steak</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/cherries.jpg" alt=""></div>
+            <h1>Cherries, Interrupted</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+         <div class="card">
+            <div><img src="https://www.w3schools.com/w3images/wine.jpg" alt=""></div>
+            <h1>Once Again, Robust Wine and Vegetable Pasta</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <h1>FOOTER</h1>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+        <div>
+            <h1>BLOG POSTS</h1>
+            <div>Lorem</div>
+            <p>Sed mattis nunc</p>
+        </div>
+        <div>
+            <h1>POPULAR TAGS </h1>
+            <div>
+                <a href="">travel</a> <a href="">dinner</a> <a href="">drinks</a> <br>
+                <a href="">travel</a> <a href="">dinner</a> <a href="">drinks</a> <br>
+                <a href="">travel</a> <a href="">dinner</a> <a href="">drinks</a> <br>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

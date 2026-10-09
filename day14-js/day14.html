@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    to build static webpages
+    html 
+    css 
+    bootstrap
+
+    to build dynamic webpagges
+    js 
+    react
+
+    javascript 
+    it is a highlevel interpreted programming language that is used to add 
+    dynamic nature to the webpages
+
+    ex: login,signup,validation, addtocart , search,sort,crud
+
+    variables
+    datatypes
+    conditional statements
+    loops
+    functions
+    string,array,obj methods
+
+    how to insert js
+    1) inline
+    <button onclick="console.log('hello js from inline')">click me</button>
+
+    2) internal
+  <script>
+        console.log('hello js from internal')
+    </script>
+
+    3) external
+    demo.js
+        console.log('hello js from external')
+    at the bottom
+    <script src="demo.js"></script>
+    open with live server-- ctrl shift j
+    -->
+    <button onclick="console.log('hello js from inline')">click me</button>
+    <script>
+        /*
+        variables 
+        variables are like containers that is used to store the data and
+        the data could be anything
+
+        variable are defined with var ,let or cons keywords follwed by variable
+        name followed by value
+        var a=10;
+        let b=20;
+        const c=30;
+        console.log(a,b,c)
+
+        variable terms
+        declaration- when we allocate memory to a variable
+        var dec;
+
+        undefined- a variable without a value
+        console.log(dec)
+
+        assignment- defining in one line and assiging in anothher line
+        var as;
+        as='hello world'
+
+        initialization
+        var a=10;
+
+        not defined - error- when we call undeclarad variable
+        console.log(udec)
+
+        hoisting
+        hoistiing is a behavior of js where the declaration of a variable and functions 
+        are moved to top even before the execution
+         
+        console.log(udec)
+        var udec=10;
+
+        console.log('hello js from internal')
+        var a=10;
+        let b=20;
+        const c=30;
+        console.log(a,b,c)
+
+        var dec;
+        console.log(dec)
+
+        var as;
+        as='hello world'
+        console.log(as)
+
+
+        datatypes
+        a) primitive data types
+          1) which stores single values
+          2) are immutable
+          3) stored in stack
+          4) get by value pass by value
+
+          1) strings
+          it is a collecction of characters enclosed  in '' or "" or ``
+          strings  are immutable 
+
+          var str='hello world';
+          str[0]='z'
+          console.log(str)
+          console.log(str[0])
+
+          2) number
+          var num=10;
+          var num1=-10;
+          var num2=10.3
+          console.log(typeof num2)
+
+          3) boolean - reprsent true or false
+          var isadmin=true
+          var ispremium=false
+          var isactive=false
+          console.log(isadmin,isactive,ispremium)
+
+          4) undefined
+          5) null
+          it is a intensional absence of an value
+          var emp1=null;
+          var emp2;
+          console.log(emp1+1)//1
+          console.log(emp2+1)//nan
+
+
+
+        
+        b) non primitive data types
+          1) which stores multiple values
+          2) are mutable
+          3) stored in heap
+          4) get by reference pass by reference
+
+
+           1) array
+           it is used store the mutiple items in a single variable
+           it contains both homogeneous and heterogenous
+           can be accessed by numbered indexing
+
+
+               let arr=['html','css','js']
+           arr[0]='html5'
+           console.log(arr)
+           console.log(arr[0])//html
+           console.log(arr[-1])//undefined
+
+           2) objects
+           it is used to store the collection of data in key value pairs
+           var obj={
+           name:'john',
+           age:25
+           }
+           console.log(obj)
+
+           //dot method
+           console.log(obj.name)
+           //square brackets
+           console.log(obj['age'])
+        */ 
+
+      
+          var str='hello world';
+          str[0]='z'
+          console.log(str)
+          console.log(str[0])
+
+           var num=10;
+          var num1=-10;
+          var num2=10.3
+          console.log(typeof num2)
+          console.log(num,num1,num2)
+
+          var isadmin=true
+          var ispremium=false
+          var isactive=false
+          console.log(isadmin,isactive,ispremium)
+
+          var emp1=null;
+          var emp2;
+          console.log(emp1+1)//1
+          console.log(emp2+1)//nan
+
+          
+           let arr=['html','css','js']
+           arr[0]='html5'
+           console.log(arr)
+           console.log(arr[0])//html
+           console.log(arr[-1])//undefined
+
+
+           var obj={
+           name:'john',
+           age:25
+           }
+           obj.name='jessy'
+           console.log(obj)
+
+           //dot method
+           console.log(obj.name)
+           //square brackets
+           console.log(obj['age'])
+
+           function greet(){
+            console.log('welcome to the page')
+           }
+           greet()
+           greet()
+           greet()
+           greet()
+    </script>
+    <script src="demo.js"></script>
+</body>
+</html>

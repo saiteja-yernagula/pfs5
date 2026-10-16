@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+        
+    1) named 
+       function sum(a){
+       return a+a
+       }
+       console.log(sum(10))
+    2) arrow function
+      it is a more concise way of writing a function in simple syntax
+      let sum= (a)=>{
+       return a+a
+       }
+
+       we can eliminate {},paranthesis and return keyword
+      let sum=a=>a+a
+      console.log(sum(10))
+      console.log(sum(20))
+      console.log(sum(30))
+
+      3) anonymous function
+       a function that defined without a name
+       let greet=function(){
+       console.log('hello world')
+       }
+       greet()
+
+       4) self invoking
+       (declaraation)()
+
+       let sum=a=>a+a
+       console.log(sum(10))
+      console.log(sum(20))
+      console.log(sum(30))
+
+       let greet=function(){
+       console.log('hello world');
+       }
+       greet();
+
+       (function(){
+        console.log('welcome to the page')
+    })()
+
+    5) callback functions
+
+    when a function definition is passed to another function as an argument
+    and executes later in outer function
+    
+    function addtocart(a){
+        console.log('products are added to cart')
+        a(order)
+    }
+    function payment(b){
+        console.log('payment done')
+        b()
+    }
+    function order(){
+        console.log('orderplaced')
+    }
+    addtocart(payment)
+
+    closure
+    when an inner function can remember and can change the variable which is defined in outer funciton
+    even aftr the execution of outer fun
+    */
+   function outer(){
+        let c=0
+        console.log('outer fun is executed')
+
+        return function(){
+            console.log('inner fun is executed')
+            c++
+            console.log(c)
+        }
+    }
+
+    let a=outer()
+    a()//1
+    a()//2
+
+    // outer()()
+    // outer()()
+    </script>
+</body>
+</html>

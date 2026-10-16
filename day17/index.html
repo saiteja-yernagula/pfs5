@@ -108,19 +108,19 @@
       <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="">
       <h1>Nike Shoes</h1>
       <p>2000</p>
-      <button onclick="addtocart()">addtocart</button>
+      <button onclick="addtocart('nike',2000)">addtocart</button>
     </div>
     <div class="card">
       <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="">
       <h1>Smart watch</h1>
       <p>1500</p>
-      <button onclick="addtocart()">addtocart</button>
+      <button onclick="addtocart('watch',1500)">addtocart</button>
     </div>
     <div class="card">
       <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="">
       <h1>Headphones</h1>
       <p>1200</p>
-      <button onclick="addtocart()">addtocart</button>
+      <button onclick="addtocart('headphones',1200)">addtocart</button>
     </div>
   </div>
 
@@ -129,5 +129,29 @@
     <div id="cartblock"></div>
     <h3 id="total">Total 0</h3>
   </div>
+
+  <script>
+
+    let c=0
+    let sum=0
+    function addtocart(name,price){
+      let cartcount=document.getElementById('cartcount')
+      c++
+      cartcount.innerHTML=c
+
+      sum+=price
+      let total=document.getElementById('total')
+      total.innerHTML="Total "+sum
+
+      let cartblock=document.getElementById('cartblock')
+      cartblock.innerHTML+=`
+      <div class='cart-item'>
+        <h3>${name}</h3>
+        <p>${price}</p>
+      </div>
+      `
+    }
+
+  </script>
 </body>        
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" id="registerform">
+        <input type="text" id="inp1" placeholder="enter name">
+        <input type="text" id="inp2" placeholder="enter password">
+        <button type="submit">submit</button>
+    </form>
+
+    <script>
+        let registerform=document.getElementById('registerform')
+        registerform.onsubmit=function(event){
+            //it is used to prevent the automatic form submission
+            event.preventDefault()
+            console.log('form submitted')
+            //1st way using event.target
+            console.log(event.target[0].value)
+            console.log(event.target[1].value)
+            //using by id
+            let inp1=document.getElementById('inp1')
+            let inp2=document.getElementById('inp2')
+            console.log(inp1.value,inp2.value)
+        }
+
+        /*
+        
+        regex- regular expression
+        it is used to  define a specific patterns for the validations
+
+        single occurence
+        /[a-z]/
+
+        multiple
+        /[a-z]+/
+        /[a-zA-Z]+/
+        /[a-zA-Z0-9]+/
+        /[#$%]+/
+        /[0-9]{10}/
+
+        email
+        name- [a-z0-9.-_]+
+        sym- @
+        gmail- [a-z]+
+        .-   \.
+        com- [a-z]{2,3}
+        */
+       let pattern= /[0-9]{10}/
+       let text='8932743835'
+       console.log(text.match(pattern))
+       
+       let emailpattern=/[a-z0-9.-_]+@[a-z]+\.[a-z]{2,3}/
+       let emailtext='john@gmail.com'
+       console.log(emailtext.match(emailpattern))
+
+       
+    </script>
+</body>
+</html>

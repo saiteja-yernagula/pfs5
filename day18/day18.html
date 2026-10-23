@@ -49,16 +49,25 @@
         gmail- [a-z]+
         .-   \.
         com- [a-z]{2,3}
+
+        password pattern
+        one up- (?=.*[A-Z])
+        one low-(?=.*[a-z])
+        one spc-(?=.*[@#$%])
+        one num-(?=.*[0-9])
+        lenght- {8}
         */
        let pattern= /[0-9]{10}/
        let text='8932743835'
        console.log(text.match(pattern))
        
        let emailpattern=/[a-z0-9.-_]+@[a-z]+\.[a-z]{2,3}/
+       let passwordpattern=/(?=.*[A-Z])(?=.*[a-z])(?=.*[@#$%])(?=.*[0-9]).{8}/
        let emailtext='john@gmail.com'
        console.log(emailtext.match(emailpattern))
 
-       
+
+
     </script>
 </body>
 </html>

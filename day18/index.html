@@ -121,6 +121,56 @@
         <div id="successmessage"></div>
     </div>
 
+    <script>
+        let registerform=document.getElementById('registerform')
+        registerform.onsubmit=function(e){
+            e.preventDefault()
+            let name=document.getElementById('name')
+            let email=document.getElementById('email')
+            let password=document.getElementById('password')
+            let cpassword=document.getElementById('cpassword')
+
+            let nameerror=document.getElementById('nameerror')
+            let emailerror=document.getElementById('emailerror')
+            let passworderror=document.getElementById('passworderror')
+            let cpassworderror=document.getElementById('cpassworderror')
+
+            let successmessage=document.getElementById('successmessage')
+
+            nameerror.innerHTML=''
+            emailerror.innerHTML=''
+            passworderror.innerHTML=''
+            cpassworderror.innerHTML=''
+            successmessage.innerHTML=''
+
+            let isvalid=true
+
+            if(name.value==""){
+                nameerror.innerHTML="Name must be filled"
+                isvalid=false
+            }
+
+     let emailpattern=/[a-z0-9.-_]+@[a-z]+\.[a-z]{2,3}/
+       let passwordpattern=/(?=.*[A-Z])(?=.*[a-z])(?=.*[@#$%])(?=.*[0-9]).{8}/
+       if(!email.value.match(emailpattern)){
+           emailerror.innerHTML='Enter valid mail'
+           isvalid=false
+       }
+       if(!password.value.match(passwordpattern)){
+        passworderror.innerHTML='Password must contain uppercase, number ,special and minimum 8 characters'
+        isvalid=false
+       }
+       if(password.value!=cpassword.value){
+        cpassworderror.innerHTML='Password are not matched'
+        isvalid=false
+       }
+
+            if(isvalid){
+                successmessage.innerHTML='form submitted succesfully'
+            }
+
+        }
+    </script>
   
 
  

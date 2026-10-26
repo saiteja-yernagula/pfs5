@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*
+synchronous code
+which executes line by line - doesnt takes time
+
+asynchronous code
+which executes pararllely -takes time
+
+event loop mechanism
+call stack
+web api
+callback que
+event loop
+
+console.log('first')
+
+setTimeout(() => {
+    console.log('second')
+}, 0);
+
+console.log('third')
+
+promises 
+it represents the eventual completion or failur of an asynchronous task
+
+states
+fullifllled 
+rejected
+pending
+
+creating a promise
+
+
+consuming a promise
+1) .then.catch
+2) async await
+
+
+
+let prom=new Promise((res,rej)=>{
+    let val=10
+    if(val==10){
+        res('promise is resolved')
+    }else{
+        rej('promise is rejected')
+    }
+})
+//consuming a promise using .then.catcch
+prom.then((fullfilled)=>console.log(fullfilled))
+.catch((error)=>console.log(error))
+
+//using async and await
+async function getprom(){
+    //it pauses the execution untill the promise is settled
+    let data=await prom
+    console.log(data)
+}
+getprom()
+
+
+fetch()
+it is used to make an network request (api calls)
+it returns the promise object
+1) .then.catch or 2) async await
+get post put delete
+*/ 
+
+let apilink='https://fakestoreapi.com/products'
+fetch(apilink).then(res=>res.json())
+.then(finalres=>console.log(finalres))
+.catch(error=>console.log(error))
+
+ async function getdata(){
+    let data=await fetch(apilink)
+    let finaldata=await data.json()
+    console.log(finaldata)
+}
+getdata()
+
+    </script>
+    
+</body>
+</html>

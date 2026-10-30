@@ -151,9 +151,46 @@
             <button onclick="addtask()">Add</button>
         </div>
         <div id="tasklist">
-            
+
         </div>
     </div>
+
+    <script>
+    let tasks=JSON.parse(localStorage.getItem('pfs5tasks')) || []
+    displaytask()
+    
+    function addtask(){
+        let inp=document.getElementById('inp')
+        if(inp.value==""){
+            alert('please enter value')
+            return 
+        }
+        tasks.push(inp.value)
+        localStorage.setItem('pfs5tasks',JSON.stringify(tasks))
+        console.log(tasks)
+        displaytask()
+    }
+
+    function displaytask(){
+        let tasklist=document.getElementById('tasklist')
+        tasklist.innerHTML=tasks.map((val,ind)=>{
+            return `
+            <div class='task'>
+            <p>${val}</p> 
+            <button class='delete-btn' onclick='deletetask(${ind})'>del</button>   
+            </div>
+            `
+        })
+    }
+
+    function deletetask(ind){
+      tasks=tasks.filter((val,index)=>ind!=index)
+     localStorage.setItem('pfs5tasks',JSON.stringify(tasks))
+     displaytask()
+    }
+
+
+    </script>
     
   </body>
 </html>

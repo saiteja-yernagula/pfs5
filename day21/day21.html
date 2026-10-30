@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        
+        shallow copy and deep copy
+        spread operator
+        hof -map filter reduce sort
+
+        destructuring
+        it is process of extracting values from array and object  and assigning it to variables
+
+        let data=[[['html','css'],['js','react']],[['python','java'],['fastapi','springboot']]]
+        //    console.log(data[1][1][0])
+    let [[static,dynamic],[programming,frameworks]]=data;
+    console.log(frameworks[0])
+
+    let details={
+        name:'john',
+        age:25,
+        address:{
+            city:'hyd',
+            state:'telangana'
+        }
+    }
+    // console.log(details.address.state)
+    let {name,age,address:{city,state}}=details
+    console.log(state)
+
+    shallow  copy
+    means references are assigned to the variable not the values
+
+    deep copy
+    means values are assigned to the varaible not the references
+
+    spread operator
+    it is used to spread the values of iterables string,arrays and objects
+    it is used for merging 
+
+    
+    let arr=['html','css','js']
+    let b=[...arr];
+    b[0]='react'
+    console.log(arr)
+    console.log(b)
+
+    let frontend=['html','css','js']
+    let backend=['python','fastapi']
+    let fullstack=[...frontend,'react',...backend]
+    console.log(fullstack)
+
+    let obj1={
+        name:'john'
+    }
+   let obj2={
+    age:25
+   }
+   let obj3={...obj1,...obj2,city:'hyd'}
+  obj3.age=26
+  console.log(obj2)
+  console.log(obj3)
+
+  hof - map filter reduce sort
+
+  map - it is used to create a transform array by appyling provided function for every element 
+  filter - it is used to create a filtered array by appyling boolena function for every element 
+  reduce- it converts the array of elements into single value -calculations
+  sort- asscending and descending array elements
+  
+  */
+ let products=[
+    {name:'dell laptop',price:50000,rating:4.4},
+    {name:'hp laptop',price:60000,rating:3.4},
+    {name:'oneplus earbuds',price:2000,rating:4.9},
+    {name:'charger',price:3500,rating:3.3}
+ ] 
+ let updated=products.map((val,ind,ar)=>{
+    return {...val,priceafterdiscount:val.price-val.price*0.2,code:Math.random()*10}
+ })
+ console.log(updated)
+
+ let filterbyprice=products.filter(val=>val.price<30000)
+ console.log(filterbyprice)
+
+  let filterbyrating=products.filter(val=>val.rating>4.5)
+ console.log(filterbyrating)
+
+ let sortedbyprice=products.sort((a,b)=>a.price-b.price)
+ console.log(sortedbyprice)
+
+ let total=products.reduce((acc,val)=>{
+    return acc+val.price
+ },0)
+ console.log(total)
+ 
+    </script>
+</body>
+</html>

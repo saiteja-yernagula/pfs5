@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        scopes 
+        let var const
+        local storage
+        higher order functions - map filter reduce
+        destructuring
+        spread operator
+
+
+        scope- it is a life or accessibility of an variable 
+
+        founder - any office, any clasrrom, any branch
+        trainer - one office , any classroom
+        student- one classroom
+
+        1) global scope
+          variable that are declared at global level has global scope means 
+          we can access from anywher
+          var ,let and const
+
+          2) block scope
+          variable that are defined in the block can be accessed within the block only
+          let and const
+
+          3) local scope
+          variables that are defined within the function can be accessed in the funcction
+        block only
+        var let and const
+
+        var founder='sai ram sir'
+        console.log(founder)
+
+       {
+        let trainer1='teja'
+        const trainer2='malli'
+        console.log(founder)
+        console.log(trainer1 ,trainer2)
+        }
+
+       function classroom(){
+        var std1='harsha'
+        let std2='sandeep'
+        const std3='sandhya'
+        console.log(std1,std2,std3)
+        console.log(founder)
+    }
+    classroom()
+
+
+    variable declaration 
+    var a
+
+    assignment
+    var a;
+    a=10;
+
+    initialization
+    var a=10
+
+
+    hoisting
+    console.log(b)//undefined
+    var b=10;
+
+
+    differences between var let const
+
+    var 
+    global and local
+    redeclaration is allowed
+    assignment is allowed
+    hoisting is allowed
+
+    let 
+    global ,block and local
+    redeclartion is not allowed
+    assignment is allowed
+    hoisting is not possible because it was in tdz
+
+
+    const
+    global ,block and local
+    redeclartion is not allowed
+    assignment is not allowed
+    hoisting is not possible because it was in tdz
+
+
+
+    local storage and session storage
+
+
+   JSON.stringify()
+   it  will the js object into json object
+
+   JSON.parse()
+   it will convert the json object into js object
+
+    */ 
+
+    //how to sent data to the localstorage
+    // let pfs5student='harsha'
+    // localStorage.setItem('pfs5student',pfs5student)
+
+    //how to get data from the localstorage
+    // let data=localStorage.getItem('pfs5student')
+    // console.log(data)
+  
+ 
+    // let products=[
+    //     {name:'laptop',id:3434},
+    //     {name:'mobile',id:3434},
+    //     {name:'earbuds',id:3434},
+    // ]
+    // localStorage.setItem('products',JSON.stringify(products))
+
+    // let data=JSON.parse(localStorage.getItem('products'))
+    // console.log(data)
+
+/*
+
+higher order functions
+map 
+it is used to create a transformed array by applying a provided function for every element
+it will always create new array
+
+filter 
+it is used to create a filtered array by applying a provided boolean function for every element
+
+
+
+
+*/ 
+
+let arr=[1,2,3,4,5,6]
+let newarr=arr.map((val ,ind ,ar)=>{
+    return val*val
+})
+
+console.log(newarr)
+
+let filteredarray=newarr.filter((val,ind,ar)=>{
+   return val%2==0
+})
+console.log(filteredarray)
+   
+    </script>
+</body>
+</html>
